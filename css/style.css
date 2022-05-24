@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+
+}
+header{
+    background-image: url("/images/123317.jpg"); 
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+}
+.headingtitle{
+    color: rgb(244, 242, 248);
+    padding: 4rem 0 8rem;
+    text-shadow: 0 1.8rem 2,3rem black;
+    font-size: 4.8rem;
+}
+nav{
+     background-color: rgba(5, 28, 31, 0.519);
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    justify-content: space-between ; 
+    background:rgba(0, 0, 0, 0.492);
+    box-shadow: 0 1.2rem 2.4rem rgba(0,0,0, 0.492);
+}
+logo-img{
+    width: 70px;
+    border-radius:40%;
+}
+
+
+.nav-links{
+    list-style-type:none  ;
+    display: flex;
+    gap: 2rem;
+    /* background: yellow;  */
+    align-items: center;
+    font-size: 2rem;   
+    color: aliceblue;
+}
+nav-link{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.8s;
+}
+.nav-link:hover, .nav-link:visited{
+    color:royalblue ;
+    cursor: pointer;
+    
+}
+.nav-link:hover,.nav-btn:active{
+    background:green;
+    color: blue;
+}
+
+.nav-btn{
+    background-color: black;
+    padding: 1rem 1rem;
+    transition: all 0.8s;
+}
+.home{
+    color: black;
+    font-size: 2.8rem;
+    padding: 6rem;
+    text-align:center;
+    font-weight:900 ;
+    padding-top: 3rem;
+}
+.text{
+    width: 65%;
+    padding: 3rem;
+    margin-left: 2rem;
+    background: rgb(246, 248, 243);
+    position: relative;
+    height: 20rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 1.2rem 3.2rem black;
+    z-index: 2;
+}
+.homeparagraph{
+    
+    color:black;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+   
+}
+.home-btn{
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: 300;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.455) ;
+    position: absolute;
+    bottom: 4rem;
+    background:rgb(49, 95, 93);
+    left: 30%;
+    transform: translate(50% , 50%);
+    padding: 1.2rem 3.2rem;
+    cursor: pointer;
+
+}
+.aboutcontainer,.tours-container{
+    padding: 10rem 4rem;
+}
+/* .container{
+    width: 1000mm;
+    margin: auto;
+} */
+.title{
+    text-align: center;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,red, blue);
+    color: transparent;
+    padding-bottom: 6rem;
+    -webkit-background-clip: text;
+}
+.aboout-text{
+    /* background: red; */
+    height: 400px;
+    text-align:left;
+}
+.video{
+    /* background: green; */
+    height: 400px;
+    text-align:left;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    align-items: center;
+}
+h3{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: black;
+}
+.first-paragraph{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+.second-paragraph{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+.about-text{
+    font-size: 1.8rem;
+    color: black;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+.tours-container{
+    background:rgb(0, 0, 0);
+
+}
+.main-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem; 
+    justify-content: center;
+    align-items: center;
+}
+.card{
+display: flex;   
+width: 30rem;
+background-color:white;
+border-radius: 0.8rem;
+overflow: hidden;
+box-shadow: 1rem 1.2rem 2.4rem rgba(0, 0, 0, 0.45);
+gap: 3rem;
+flex-direction: column;
+transition: all 0.3s;
+}
+.card:hover{
+    transform: translate(5px, -5px);
+}
+.card-content{
+padding: 0rem 3rem 1.5rem;
+}
+.img-card{
+    width: 100px;
+    clip-path: polygon(48% 9%, 71% 20%, 100% 35%, 100% 70%, 76% 79%, 49% 89%, 22% 79%, 0% 70%, 0 33%, 27% 20%);
+
+}
+.read-btn{
+    display:inline-block ;
+    margin: 0 3rem 3rem 3rem;
+}
+.schedure-title{
+    font-size: 1.6rem;
+}
+.schedure-date{
+    font-size:1.6rem ;
+    padding: 0rem 0rem 2rem 2rem;
+}
+.tour-title{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(to right green),yellow;
+    color: transparent;
+    text-shadow: 0.1rem 2.2rem rgba(0, 0, 0, 0.455);
+    -webkit-background-clip: text;
+}
+.tour-text{
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem 0;
+    color: #555;
+}
+.place-title{}
+
